@@ -23,7 +23,7 @@ export const Datasets = [
       { skill: "Teamwork and Collaboration", percentage: 80 },
       { skill: "Effective Communication", percentage: 70 },
       { skill: "Problem Solving Abilities", percentage: 80 },
-      { skill: "Flexible and Adaptable", percentage: 60 },
+      { skill: "Flexible and Adaptable", percentage: 80 },
       { skill: "Time Management", percentage: 80 },
     ],
   },

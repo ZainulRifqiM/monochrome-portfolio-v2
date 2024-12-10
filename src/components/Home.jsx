@@ -20,7 +20,7 @@ const Home = () => {
           </div>
         </div>
         <button
-          className="mx-auto contact-btn py-1 px-2 bg-blackBg text-labelColor border-labelColor border rounded text-sm flex items-center gap-2 hover:text-blackBg hover:bg-gradient-to-r from-textColor to-labelColor "
+          className="mx-auto py-1 px-2 bg-blackBg text-labelColor border-labelColor border rounded text-sm flex items-center gap-2 hover:text-blackBg hover:bg-gradient-to-r from-textColor to-labelColor "
           onClick={() => {}}
         >
           Hire Me

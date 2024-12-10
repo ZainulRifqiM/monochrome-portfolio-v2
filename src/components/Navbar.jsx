@@ -42,7 +42,7 @@ const Navbar = () => {
                 </li>
               ))}
               <button
-                className="contact-btn py-1 px-2 bg-blackBg text-labelColor border-labelColor border rounded text-sm flex items-center gap-2 hover:text-blackBg hover:bg-gradient-to-r from-textColor to-labelColor "
+                className="py-1 px-2 bg-blackBg text-labelColor border-labelColor border rounded text-sm flex items-center gap-2 hover:text-blackBg hover:bg-gradient-to-r from-textColor to-labelColor "
                 onClick={() => {}}
               >
                 Hire Me
@@ -73,7 +73,7 @@ const Navbar = () => {
                 </li>
               ))}
               <button
-                className="contact-btn py-1 px-2 bg-blackBg text-labelColor border-labelColor border rounded text-sm flex items-center gap-2 hover:text-blackBg hover:bg-gradient-to-r from-textColor to-labelColor "
+                className="py-1 px-2 bg-blackBg text-labelColor border-labelColor border rounded text-sm flex items-center gap-2 hover:text-blackBg hover:bg-gradient-to-r from-textColor to-labelColor "
                 onClick={() => {}}
               >
                 Hire Me
