@@ -26,7 +26,13 @@ const Navbar = () => {
               <div className=" p-1 rounded-full border-2 border-labelColor hover:border-textColor">
                 <MdOutlineMailOutline className="text-sm " />
               </div>
-              <p className="font-normal text-sm">zainulrifqim@gmail.com</p>
+              <a
+                href="mailto:zainulrifqim@gmail.com"
+                target="_blank"
+                className="font-normal text-sm"
+              >
+                zainulrifqim@gmail.com
+              </a>
             </div>
           </a>
           <div className="hidden md:flex space-x-4">
@@ -43,7 +49,9 @@ const Navbar = () => {
               ))}
               <button
                 className="py-1 px-2 bg-blackBg text-labelColor border-labelColor border rounded text-sm flex items-center gap-2 hover:text-blackBg hover:bg-gradient-to-r from-textColor to-labelColor "
-                onClick={() => {}}
+                onClick={() => {
+                  window.location.href = "mailto:zainulrifqim@gmail.com";
+                }}
               >
                 Hire Me
                 <MdOutlineCallMade />
@@ -74,7 +82,9 @@ const Navbar = () => {
               ))}
               <button
                 className="py-1 px-2 bg-blackBg text-labelColor border-labelColor border rounded text-sm flex items-center gap-2 hover:text-blackBg hover:bg-gradient-to-r from-textColor to-labelColor "
-                onClick={() => {}}
+                onClick={() => {
+                  window.location.href = "mailto:zainulrifqim@gmail.com";
+                }}
               >
                 Hire Me
                 <MdOutlineCallMade />

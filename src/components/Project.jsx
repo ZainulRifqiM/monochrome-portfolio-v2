@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard";
 
 const Project = () => {
   return (
-    <div className="md:px-8 p-4  m-4   max-w-screen-xl w-full mx-auto  h-full space-y-8">
+    <div className="md:px-8 p-4  m-4 content-center  max-w-screen-xl w-full mx-auto  md:min-h-[80vh] space-y-8">
       <div className="text-center">
         <h1 className=" text-lg md:text-2xl font-medium bg-gradient-to-r from-textColor to-labelColor inline-block text-transparent bg-clip-text">
           Here are all my projects

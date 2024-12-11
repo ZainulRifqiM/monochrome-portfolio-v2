@@ -11,13 +11,19 @@ const SkillCard = ({ title, icon, isActive, onClick }) => {
       <div
         className={`${
           isActive
-            ? "flex bg-labelColor border-textColor text-blackBg "
+            ? "flex bg-labelColor border-textColor text-black "
             : "hidden"
         } md:w-16 md:h-16 w-6 h-6 absolute rounded-md md:top-[-0.5rem] md:left-[-0.5rem] top-[-0.2rem] left-[-0.2rem] border  border-labelColor  bg-labelColor text-labelColor`}
       >
         <img src={icon} alt={title} />
       </div>
-      <span className="md:text-base text-xs">{title}</span>
+      <span
+        className={`${
+          isActive ? "bg-labelColor border-textColor text-black " : ""
+        } md:text-base text-xs`}
+      >
+        {title}
+      </span>
     </div>
   );
 };
