@@ -1,10 +1,9 @@
-import React from "react";
+import PropTypes from "prop-types";
 
 const SkillCardInfo = ({ heading, skills }) => {
-  console.log(skills);
   return (
-    <div className="skills-info-card p-4 bg-[#161616] rounded-md">
-      <h4 className="text-base md:text-xl font-medium text-labelColor mb-4">
+    <div className="skills-info-card p-4 bg-[#161616] rounded-md border border-labelColor">
+      <h4 className="text-base md:text-xl font-medium text-labelColor mb-8 border-b-2 border-labelColor">
         {heading}
       </h4>
       {skills.map((skill, index) => (
@@ -19,7 +18,7 @@ const SkillCardInfo = ({ heading, skills }) => {
           </div>
           <div className="skill-bar bg-disabledColor rounded-full h-2">
             <div
-              className="skill-bar-fill bg-labelColor h-full rounded-full"
+              className="skill-bar-fill bg-labelColor h-full rounded-full transition-all duration-500 ease-in-out"
               style={{ width: `${skill.percentage}%` }}
             ></div>
           </div>
@@ -27,6 +26,17 @@ const SkillCardInfo = ({ heading, skills }) => {
       ))}
     </div>
   );
+};
+
+// Menambahkan validasi prop
+SkillCardInfo.propTypes = {
+  heading: PropTypes.string.isRequired, // heading harus berupa string dan wajib
+  skills: PropTypes.arrayOf(
+    PropTypes.shape({
+      skill: PropTypes.string.isRequired, // skill harus berupa string dan wajib
+      percentage: PropTypes.number.isRequired, // percentage harus berupa number dan wajib
+    })
+  ).isRequired, // skills harus berupa array dan wajib
 };
 
 export default SkillCardInfo;

@@ -4,7 +4,7 @@ const SkillCard = ({ title, icon, isActive, onClick }) => {
   return (
     <div
       className={`${
-        isActive ? "bg-labelColor border-textColor text-blackBg" : ""
+        isActive ? "bg-labelColor border-textColor text-black " : ""
       }  border border-labelColor flex basis-1/3 rounded-md md:p-10 p-4 text-labelColor justify-center relative bg-[#161616]   cursor-pointer transition-all duration-300 ease-in-out hover:bg-labelColor hover:text-blackBg`}
       onClick={() => onClick()}
     >

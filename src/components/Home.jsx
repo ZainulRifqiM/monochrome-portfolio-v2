@@ -7,7 +7,7 @@ const Home = () => {
       className="md:px-8 p-4 content-center max-w-screen-xl w-full mx-auto  h-screen "
       id="home"
     >
-      <div className="mx-auto text-center space-y-8">
+      <div className="text-center space-y-8">
         <img src={zae} className="w-24 md:w-32 mx-auto" alt="" />
         <div className="space-y-2">
           <p className="text-sm font-normal text-labelColor">
